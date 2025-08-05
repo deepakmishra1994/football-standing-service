@@ -28,6 +28,6 @@ public class SwaggerConfig {
                         .contact(new Contact()
                                 .name("Mishra's Team")
                                 .email("deepakmisra1994@gmail.com")
-                                .url("https://github.com/deepakmishra1994")));
+                                .url("https://github.com/deepakmishra1994/football-standing-service")));
     }
 }
