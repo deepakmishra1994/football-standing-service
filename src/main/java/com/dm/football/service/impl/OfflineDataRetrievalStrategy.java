@@ -19,13 +19,6 @@ public class OfflineDataRetrievalStrategy implements DataRetrievalStrategy {
     public OfflineDataRetrievalStrategy(OfflineModeService offlineModeService) {
         this.offlineModeService = offlineModeService;
     }
-
-    /*@Override
-    public StandingResponse getStanding(String country, String league, String team) {
-        return offlineModeService.getStanding(country, league, team)
-                .orElseThrow(() -> new DataNotFoundException("No cached data found for this query"));
-    }*/
-
     @Override
     public List<CountryResponse> getAllCountries() {
         return offlineModeService.getAllCountries();

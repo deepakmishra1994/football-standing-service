@@ -8,7 +8,6 @@ import com.dm.football.response.TeamResponse;
 import java.util.List;
 
 public interface DataRetrievalStrategy {
-    //StandingResponse getStanding(String country, String league, String team);
 
     List<CountryResponse> getAllCountries();
 

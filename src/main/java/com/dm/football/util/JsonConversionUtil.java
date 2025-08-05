@@ -1,7 +1,6 @@
 package com.dm.football.util;
 
 import com.fasterxml.jackson.core.JsonParseException;
-import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -36,32 +35,7 @@ public class JsonConversionUtil {
         }
     }
 
-    public static <T> String convertToJson(T object) throws JsonProcessingException {
-        return objectMapper.writeValueAsString(object);
-    }
-
-    public static <T> T convertFromJson(String jsonString, Class<T> clazz) throws IOException {
-        return objectMapper.readValue(jsonString, clazz);
-    }
-
     public static <T> T convertFromJson(String jsonString, TypeReference<T> typeReference) throws IOException {
         return objectMapper.readValue(jsonString, typeReference);
-    }
-
-    public static <I, O> O convertTo(I source, TypeReference<O> targetType) throws IOException {
-        return objectMapper.readValue(objectMapper.writeValueAsString(source), targetType);
-    }
-
-    public static <I, O> O convertToSilently(I source, TypeReference<O> targetType) {
-        try {
-            return convertTo(source, targetType);
-        } catch (IOException e) {
-            log.error("Exception while converting", e);
-            return null;
-        }
-    }
-
-    public static <I, O> O convertTo(I source, Class<O> toValueType) {
-        return objectMapper.convertValue(source, toValueType);
     }
 }
