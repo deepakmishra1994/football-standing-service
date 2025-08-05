@@ -91,25 +91,28 @@ The following sequence diagram illustrates the complete interaction flow:
 
 ```json
 {
-  "countryId": "44",
-  "countryName": "England",
-  "leagueId": "152",
-  "leagueName": "Premier League",
-  "teamId": "141",
-  "teamName": "Arsenal",
-  "overallLeaguePosition": "1",
-  "overallLeaguePoints": "25",
-  "_links": {
-    "self": {
-      "href": "http://localhost:8080/api/team-standing/England/Premier%20League/Arsenal"
-    },
-    "league-standings": {
-      "href": "http://localhost:8080/api/standings/152"
-    },
-    "team-details": {
-      "href": "http://localhost:8080/api/teams/152"
+    "country_name": "England",
+    "league_id": "149",
+    "league_name": "Non League Premier",
+    "team_id": "3035",
+    "team_name": "Horsham",
+    "overall_league_position": "1",
+    "overall_league_payed": "42",
+    "overall_league_W": "28",
+    "overall_league_D": "3",
+    "overall_league_L": "11",
+    "overall_league_GF": "82",
+    "overall_league_GA": "40",
+    "overall_league_PTS": "87",
+    "team_badge": "https://apiv3.apifootball.com/badges/3035_horsham.jpg",
+    "_links": {
+        "self": {
+            "href": "http://localhost:8080/team-standing/England/149/Horsham"
+        },
+        "league-standings": {
+            "href": "http://localhost:8080/standings/149"
+        }
     }
-  }
 }
 ```
 
