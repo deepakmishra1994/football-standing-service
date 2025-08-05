@@ -73,11 +73,11 @@ The following sequence diagram illustrates the complete interaction flow:
 
 | Method | Endpoint | Description | Response |
 |--------|----------|-------------|----------|
-| GET | `/api/countries` | Get all available countries | List of countries |
-| GET | `/api/leagues/{countryId}` | Get leagues by country | List of leagues |
-| GET | `/api/teams/{leagueId}` | Get teams by league | List of teams |
-| GET | `/api/standings/{leagueId}` | Get league standings | Complete standings table |
-| GET | `/api/team-standing/{country}/{leagueId}/{team}` | Get specific team standing | Team position and stats |
+| GET | `/countries` | Get all available countries | List of countries |
+| GET | `/leagues/{countryId}` | Get leagues by country | List of leagues |
+| GET | `/teams/{leagueId}` | Get teams by league | List of teams |
+| GET | `/standings/{leagueId}` | Get league standings | Complete standings table |
+| GET | `/team-standing/{country}/{leagueId}/{team}` | Get specific team standing | Team position and stats |
 
 ### System Endpoints
 
