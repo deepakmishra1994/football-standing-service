@@ -6,8 +6,6 @@ A production-ready Spring Boot microservice that provides football team standing
 
 This microservice implements a robust architecture designed for scalability, maintainability, and resilience. The application follows microservice best practices and can operate in both online and offline modes.
 
-[asset:1]
-
 ## 🎯 Features
 
 ### Core Features
