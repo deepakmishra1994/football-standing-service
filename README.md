@@ -13,7 +13,6 @@ This microservice implements a robust architecture designed for scalability, mai
 - **Offline Mode**: Toggle between online API calls and cached offline data
 - **RESTful API**: HATEOAS-compliant REST endpoints
 - **Real-time Data**: Integration with APIFootball.com
-- **Responsive UI**: Modern web interface with real-time updates
 
 ### Technical Features
 - **SOLID Principles**: Clean, maintainable code architecture
