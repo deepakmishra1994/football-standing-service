@@ -54,7 +54,7 @@ public class ApiFootballClientAdapter {
             };
             return JsonConversionUtil.convertFromJsonSilently(response.getBody(), typeReference);
         } catch (Exception ex) {
-            log.error("Error while fetching Amazon Balance ", ex);
+            log.error("Error while fetching countries", ex);
             return Collections.emptyList();
         }
     }
